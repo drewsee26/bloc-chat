@@ -1,10 +1,13 @@
 <section class="sidebar">
-    <div class="title">
-        <h1>{{ home.title }}</h1>
+    <div class="sidebar-header">
+        <h1 class="sidebar-title">{{ home.title }}</h1>
+        <button type="button" class="new-room" ng-click="home.newRoomModal()">New room</button>
     </div>
-    <div class="rooms" ng-repeat="room in home.rooms">
+    <div class="sidebar-body" ng-repeat="room in home.rooms">
         <h3 class="room-name">{{ room.name }}</h3>
     </div>
 </section>
+
+
 
 
