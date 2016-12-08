@@ -15,10 +15,12 @@
 
 .sidebar-title {
     display: inline-block;
+    padding-right: 15px;
 }
 
 .sidebar-header .new-room {
     margin: 0 5px;
+    
 }
 
 .sidebar-header {
@@ -29,6 +31,9 @@
 
 .sidebar .room-name {
     padding-left: 30px;
-    
+}
+
+.sidebar .room-name:hover {
+    cursor: pointer;
 }
 

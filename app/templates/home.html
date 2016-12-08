@@ -1,13 +1,22 @@
 <section class="sidebar">
     <div class="sidebar-header">
-        <h1 class="sidebar-title">{{ home.title }}</h1>
+        <h1 class="sidebar-title">Bloc Chat</h1>
         <button type="button" class="new-room" ng-click="home.newRoomModal()">New room</button>
     </div>
     <div class="sidebar-body" ng-repeat="room in home.rooms">
-        <h3 class="room-name">{{ room.name }}</h3>
+        <h3 class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</h3>
     </div>
 </section>
 
-
+<section class="messages">
+    <div class="messages-header">
+        <h3>{{ home.currentRoomName.name }}</h3>
+    </div>
+    <div class="messages-body" ng-repeat="message in home.messages">
+        <div class="username">{{ message.username }}</div>
+        <div class="timestamp">{{ message.sentAt }}</div>
+        <div class="user-message">{{ message.content }}</div>
+    </div>
+</section>
 
 
