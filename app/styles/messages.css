@@ -31,3 +31,13 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.message-field {
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+}
+
+.message-box {
+    width: 800px;
+}
